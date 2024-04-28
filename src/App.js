@@ -10,7 +10,7 @@ function App() {
     <div className="App">
     <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<WelcomeScreen />}></Route>
+          <Route exact path="/birthday-gift" element={<WelcomeScreen />}></Route>
           <Route path="/wishes" element={<Wishes />}></Route>
         </Routes>
     </BrowserRouter>

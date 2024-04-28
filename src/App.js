@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WelcomeScreen from './components/StartScreen';
 import Wishes from './components/Wishes';
 
@@ -7,14 +7,14 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+    <BrowserRouter>
         <Routes>
-          <Route path="/" element={<WelcomeScreen />} />
-          <Route path="/wishes" element={<Wishes />} />
+          <Route exact path="/" element={<WelcomeScreen />}></Route>
+          <Route path="/wishes" element={<Wishes />}></Route>
         </Routes>
-      </div>
-    </Router>
+    </BrowserRouter>
+    </div>
   );
 }
 

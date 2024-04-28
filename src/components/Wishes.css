@@ -1,0 +1,48 @@
+.birthday-title {
+    color: rgb(252, 18, 182);
+    animation: slide-in 2s ease forwards; 
+
+  }
+  
+  .birthday-message {
+    color: black; 
+    animation: slide-in 5s ease forwards;
+    padding: 10px;
+  }
+  .wishes-container {
+    display: flex;
+    width: 70%;
+    height: 90%;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  .birthday_css{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.844);
+    border-radius: 20px;
+  }
+  .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
